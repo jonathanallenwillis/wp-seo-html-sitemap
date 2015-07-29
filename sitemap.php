@@ -102,7 +102,7 @@ function wpseo_sitemap_settings_page() {
 		<td><select name="wpseosms[pageID]" class="inputs">
 			<?php
 			if( $pages = get_pages() ){
-				if ($options['wpseo-sitemap-pageID'] == ''){
+				if ($options['pageID'] == ''){
 					echo '<option value="">- Choose Your Sitemap Page -</option>';
 				}
 				foreach( $pages as $page ){
